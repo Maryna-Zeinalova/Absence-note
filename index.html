@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Absence note</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Absence note
+                  </a>
+                </div>
+              </nav>
+        </div>
+      </header>
+      <div class="wrapper">
+        <h3 class="text-center caption">Time and nerves saving tool</h3>
+        <p class="text-center caption"><img src="./images/warranty.png" width="20px" alt="warranty">Approved by 100 000 parents</p>
+        <p class="text-center caption mb-3">All the notes templates were written by experts in the education and law field</p>
+      
+        <main class="main">
+         <div class="main-block">
+            <section class="form">
+                <h3 class="subtitle">Teacher</h3>
+                  <div class="block">
+                    <select class="form-select form-select-sm teacher-gender" aria-label="Default select example" name="teacher-gender">
+                      <option selected>Mr.</option>
+                      <option value="1">Mrs.</option>
+                      <option value="2">Ms.</option>              
+                    </select>
+                    <input class="form-control form-control-sm teacher-name" type="text" placeholder="Enter teacher's name" aria-label="default input example" name="teacher-name">
+                  </div>
+                  
+        
+                  <h3 class="subtitle">Child</h3>
+                  <div class="block">
+                    <select class="form-select form-select-sm child-gender" aria-label="Default select example" name="child-gender">
+                      <option selected>Son</option>
+                      <option value="1">Daughter</option>              
+                    </select>
+                    <input class="form-control form-control-sm chld-name" type="text" placeholder="Enter your child's name" aria-label="default input example" name="child-name">
+                  </div>
+        
+                  <h3 class="subtitle">Parent</h3>
+                  <div class="block">
+                    <select class="form-select form-select-sm parent-gender" aria-label="Default select example" name="parent-gender">
+                      <option selected>Mother</option>
+                      <option value="1">Father</option>              
+                    </select>
+                    <input class="form-control form-control-sm parent-name" type="text" placeholder="Enter parent's name" aria-label="default input example" name="parent-name">
+                  </div>
+        
+                  
+                  <div class="block">
+                   <label class="subtitle">Date</label>
+                    <input
+                    type="date"
+                    name="date"
+                    value="2023-02-17"
+                    min="2018-01-01"
+                    max="2023-12-31"
+                  />
+                  </div>
+        
+                 <div class="block">
+                   <h3 class="subtitle">Reason</h3>
+                  <select class="form-select form-select-sm " aria-label=".form-select-lg example" name="reason">            
+                    <option selected>family reasons</option>
+                    <option value="1">unsuitable weather conditions</option>
+                    <option value="2">a doctor's appointment</option>
+                    <option value="3">alien invasion</option>
+                  </select>
+                 </div>
+                </section>   
+                
+                <section class="note-content">
+                </section>
+         </div>
+         <a href="#" class="btn generate-button mt-3">Generate note</a>
+       </main>
+       
+     </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
