@@ -1,15 +1,15 @@
-let note = document.querySelector('.note-content');
-
-let date = '18.02.2023';
-let teacherGender = 'Mr.';
-let teacherName = 'Cooper';
-let childGender = 'son';
-let childName = 'Leonard Hofstadter';
-let reason = "family reasons";
-let parentName = 'Beverly Hofstadter';
-let parentGender = 'mother';
-
-note.innerHTML = `
+function renderNote () {
+  let note = document.querySelector(".note-content");
+  let date = "18.02.2023";
+  let teacherGender = document.getElementById("teacher-gender").value;
+  let teacherName = "Cooper";
+  let childGender = "son";
+  let childName = "Leonard Hofstadter";
+  let reason = "family reasons";
+  let parentName = "Beverly Hofstadter";
+  let parentGender = document.getElementById("parent-gender").value;
+  console.log(teacherGender.value);
+  note.innerHTML = `
 <p>${date}</p>
 <p>Dear ${teacherGender} ${teacherName},</p>
 <p>
@@ -17,7 +17,10 @@ note.innerHTML = `
   school on ${date} due to the ${reason}.
 </p>
 <p>Thank you for your understanding.</p>
-<p>Sincerely,<br />${parentName} <br />(${parentGender})</p>`
+<p>Sincerely,<br />${parentName} <br />(${parentGender})</p>`;
+}
+let
+// renderNote();
 
 // let note = document.querySelector('.note-content');
 // note.innerHTML = `
