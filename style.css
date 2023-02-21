@@ -28,8 +28,8 @@ div.container-fluid {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-.block:last-child{
-    border-bottom: none;
+.block:last-child {
+  border-bottom: none;
 }
 .title {
   font-size: 24px;
@@ -84,5 +84,8 @@ input[type="date"] {
   .main-block {
     grid-template-columns: 1fr;
     grid-gap: 20px;
+  }
+  .caption {
+    display: none;
   }
 }

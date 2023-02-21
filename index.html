@@ -42,26 +42,27 @@
         
                   <h3 class="subtitle">Child</h3>
                   <div class="block">
-                    <select class="form-select form-select-sm child-gender" aria-label="Default select example" name="child-gender">
-                      <option selected>Son</option>
-                      <option>Daughter</option>              
+                    <select id="child-gender" class="form-select form-select-sm child-gender" aria-label="Default select example" name="child-gender">
+                      <option selected>son</option>
+                      <option>daughter</option>              
                     </select>
-                    <input class="form-control form-control-sm chld-name" type="text" placeholder="Enter your child's name" aria-label="default input example" name="child-name">
+                    <input id="child-name" class="form-control form-control-sm chld-name" type="text" placeholder="Enter your child's name" aria-label="default input example" name="child-name">
                   </div>
         
                   <h3 class="subtitle">Parent</h3>
                   <div class="block">
                     <select id="parent-gender" class="form-select form-select-sm parent-gender" aria-label="Default select example" name="parent-gender">
-                      <option selected>Mother</option>
-                      <option>Father</option>              
+                      <option selected>mother</option>
+                      <option>father</option>              
                     </select>
-                    <input class="form-control form-control-sm parent-name" type="text" placeholder="Enter parent's name" aria-label="default input example" name="parent-name">
+                    <input id="parent-name" class="form-control form-control-sm parent-name" type="text" placeholder="Enter parent's name" aria-label="default input example" name="parent-name">
                   </div>
         
                   
                   <div class="block">
                    <h3 class="subtitle">Date</h3>
                     <input
+                    id="date"
                     type="date"
                     name="date"
                     value="2023-02-17"
@@ -72,17 +73,17 @@
         
                  <div class="block">
                    <h3 class="subtitle">Reason</h3>
-                  <select class="form-select form-select-sm " aria-label=".form-select-lg example" name="reason">            
+                  <select id="reason" class="form-select form-select-sm " aria-label=".form-select-lg example" name="reason">            
                     <option selected>family reasons</option>
-                    <option value="1">unsuitable weather conditions</option>
-                    <option value="2">a doctor's appointment</option>
-                    <option value="3">alien invasion</option>
+                    <option>unsuitable weather conditions</option>
+                    <option>a doctor's appointment</option>
+                    <option>alien invasion</option>
                   </select>
                  </div>
                 </section>   
                 
                 <section class="note-content">
-                  placeholder
+                  Fill in the form to get the absence note
                 </section>
          </div>
          <button onclick="renderNote()" id="generate-btn" class="btn generate-button mt-3">Generate note</button>

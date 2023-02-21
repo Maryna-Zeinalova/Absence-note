@@ -1,14 +1,13 @@
 function renderNote () {
   let note = document.querySelector(".note-content");
-  let date = "18.02.2023";
+  let date = document.getElementById("date").value;;
   let teacherGender = document.getElementById("teacher-gender").value;
-  let teacherName = "Cooper";
-  let childGender = "son";
-  let childName = "Leonard Hofstadter";
-  let reason = "family reasons";
-  let parentName = "Beverly Hofstadter";
+  let teacherName = document.getElementById("teacher-name").value;
+  let childGender = document.getElementById("child-gender").value;
+  let childName = document.getElementById("child-name").value;
+  let reason = document.getElementById("reason").value;;
+  let parentName = document.getElementById("parent-name").value;
   let parentGender = document.getElementById("parent-gender").value;
-  console.log(teacherGender.value);
   note.innerHTML = `
 <p>${date}</p>
 <p>Dear ${teacherGender} ${teacherName},</p>
@@ -19,16 +18,3 @@ function renderNote () {
 <p>Thank you for your understanding.</p>
 <p>Sincerely,<br />${parentName} <br />(${parentGender})</p>`;
 }
-let
-// renderNote();
-
-// let note = document.querySelector('.note-content');
-// note.innerHTML = `
-// <p id="date-element">20.02.2023</p>
-// <p>Dear <span id="teacher-gender-element">Mr.</span> <span id="teacher-name-element">Cooper</span>,</p>
-// <p>
-//   Please excuse my <span id="child-gender-element">son</span>, <span id="child-name-element">Leonard Hofstadter</span> for being absent from
-//   school on <span id="absence-date-element">20.02.2023</span> due to the <span id="reason-element">family reasons</span>.
-// </p>
-// <p>Thank you for your understanding.</p>
-// <p>Sincerely,<br /> <span id="parent-name-element">Beverly Hofstadter</span> <br />(<span id="parent-gender-element">mother</span>)</p>`
